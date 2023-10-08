@@ -38,10 +38,6 @@ if __name__ == '__main__':
             'value': words,
             'color': get_random_color()
         }
-        data['chp']={
-            'value': chp,
-            'color': get_random_color()
-        }
         data['weather'] = {
             'value': weather['text_day'],
             'color': '#002fa4'
