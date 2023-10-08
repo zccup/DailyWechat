@@ -19,13 +19,6 @@ def get_words():
         return get_words()
     return words.json()['data']['text']
 
-def chp():
-    qinghuaqiurl = 'https://api.shadiao.pro/chp'
-    qinghuaapi = requests.get(qinghuaqiurl)
-    chp = json.loads(qinghuaapi.text)
-    chp1 = json.dumps(chp['data'])
-    chp1 = json.loads(chp1)
-    return chp1['text']
 
 def get_random_color():
     return "#%06x" % random.randint(0, 0xFFFFFF)
